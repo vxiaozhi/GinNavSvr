@@ -21,7 +21,7 @@ start:
 	@go run -ldflags "-X main.VERSION=$(RELEASE_TAG)" main.go start $(START_ARGS)
 
 build:
-	@go build -ldflags "-w -s -X main.VERSION=$(RELEASE_TAG)" -o $(SERVER_BIN)
+	@go build -ldflags  "-w -s -X main.VERSION=$(RELEASE_TAG)" -o $(SERVER_BIN)
 
 # go install github.com/google/wire/cmd/wire@latest
 wire:
